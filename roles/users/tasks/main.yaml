@@ -1,0 +1,12 @@
+- name: Add users
+  ansible.builtin.user:
+    name: '{{ item.name }}'
+    comment: '{{ item.name }}'
+    shell: /bin/bash
+    home: /Users/{{ item.name }}
+    group: staff
+    update_password: on_create
+    password: password
+    create_home: yes
+  with_items: '{{ users }}'
+  become: yes
