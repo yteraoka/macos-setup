@@ -12,3 +12,6 @@ jobs:
       - name: ls
         run: |
           ls -l /
+      - name: python3
+        run: |
+          python3 -V
