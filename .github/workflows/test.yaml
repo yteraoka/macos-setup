@@ -14,8 +14,8 @@ jobs:
         run: ls -l /
       - name: ls -l /opt
         run: ls -l /opt
-      - name: find directories in /opt
-        run: find /opt -type d
+      #- name: find directories in /opt
+      #  run: find /opt -type d
       - name: brew list
         run: brew list
       - name: check python3 version
@@ -27,3 +27,4 @@ jobs:
           pip install -U pip
           pip install ansible
           ansible --version
+          sudo ansible-pyalbook playbook.yaml -i inventory
