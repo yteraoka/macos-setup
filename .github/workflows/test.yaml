@@ -28,3 +28,4 @@ jobs:
           pip install ansible
           ansible --version
           sudo ansible-playbook playbook.yaml -i inventory
+          id user1
