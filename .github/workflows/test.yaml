@@ -7,19 +7,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: pwd
-        run: |
-          pwd
+        run: pwd
       - name: ls -l
-        run: |
-          ls -l
+        run: ls -l
       - name: ls /
-        run: |
-          ls -l /
+        run: ls -l /
       - name: find /opt
-          find /opt -type f
+        run: find /opt -type f
       - name: check python3 version
-        run: |
-          python3 -V
+        run: python3 -V
       - name: setup ansible
         run: |
           python3 -m venv venv
