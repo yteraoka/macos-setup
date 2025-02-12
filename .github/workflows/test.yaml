@@ -12,8 +12,12 @@ jobs:
         run: ls -l
       - name: ls /
         run: ls -l /
-      - name: find /opt
-        run: find /opt -type f
+      - name: ls -l /opt
+        run: ls -l /opt
+      - name: find directories in /opt
+        run: find /opt -type d
+      - name: brew list
+        run: brew list
       - name: check python3 version
         run: python3 -V
       - name: setup ansible
